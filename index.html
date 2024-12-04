@@ -24,13 +24,12 @@
         }
 
         body {
-            background-color: #f2e3c6;
+
             font-family: 'Playfair Display', serif;
         }
 
         .bg-coffee {
             background-color: #d5b895;
-            /* Warna latar kopi */
         }
 
         .text-coffee-dark {
@@ -60,19 +59,22 @@
             </button>
             <nav id="navbar" class="hidden md:flex space-x-4">
                 <ul class="flex space-x-4">
-                    <li><a href="#home" class="text-coffee-dark font-semibold hover:text-coffee-dark">Home</a></li>
-                    <li><a href="#menu" class="text-coffee-dark font-semibold hover:text-coffee-dark">Menu</a></li>
-                    <li><a href="#alamat" class="text-coffee-dark font-semibold hover:text-coffee-dark">Alamat</a></li>
-                    <li><a href="#kontak" class="text-coffee-dark font-semibold hover:text-coffee-dark">Kontak</a></li>
+                    <li><a href="./" class="text-coffee-dark font-semibold hover:text-coffee-dark">Home</a></li>
+                    <li><a href="./menu.html" class="text-coffee-dark font-semibold hover:text-coffee-dark">Menu</a>
+                    </li>
+                    <li><a href="./alamat.html" class="text-coffee-dark font-semibold hover:text-coffee-dark">Alamat</a>
+                    </li>
+                    <li><a href="./kontak.html" class="text-coffee-dark font-semibold hover:text-coffee-dark">Kontak</a>
+                    </li>
                 </ul>
             </nav>
         </div>
         <div id="mobile-menu"
             class="fixed inset-0 bg-coffee bg-opacity-75 flex flex-col items-center justify-center space-y-6 text-white hidden">
-            <a href="#home" class="text-xl font-semibold" onclick="toggleMenu()">Home</a>
-            <a href="#menu" class="text-xl font-semibold" onclick="toggleMenu()">Menu</a>
-            <a href="#alamat" class="text-xl font-semibold" onclick="toggleMenu()">Alamat</a>
-            <a href="#kontak" class="text-xl font-semibold" onclick="toggleMenu()">Kontak</a>
+            <a href="./" class="text-xl font-semibold" onclick="toggleMenu()">Home</a>
+            <a href="./menu.html" class="text-xl font-semibold" onclick="toggleMenu()">Menu</a>
+            <a href="./alamat.html" class="text-xl font-semibold" onclick="toggleMenu()">Alamat</a>
+            <a href="./kontak.html" class="text-xl font-semibold" onclick="toggleMenu()">Kontak</a>
         </div>
     </header>
 
@@ -89,98 +91,12 @@
     </script>
 
     <!-- Home Section -->
-    <section
-        style="background: url(./coffea.jpg); background-position: center; background-repeat: repeat; background-size: cover;"
-        id="home" class="h-screen bg-cover bg-center flex items-center justify-center">
+    <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center">
         <div class="text-center">
             <h2 class="text-4xl font-bold text-black font-semibold">Selamat Datang di Kopi Tentang Kita</h2>
             <p class="text-black mt-4 font-semibold">Nikmati kopi dan minuman lainnya di tempat kami</p>
         </div>
     </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="py-16 bg-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold text-coffee-dark mb-8">Menu Minuman</h2>
-            <div class="overflow-x-auto">
-                <table class="w-full table-auto text-coffee-dark">
-                    <thead>
-                        <tr class="bg-coffee text-coffee-dark">
-                            <th class="p-4">Menu Minuman</th>
-                            <th class="p-4">Panas</th>
-                            <th class="p-4">Dingin</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="p-4 border-b">Kopi Hitam</td>
-                            <td class="p-4 border-b">4.000</td>
-                            <td class="p-4 border-b">5.000</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 border-b">Kopi Susu</td>
-                            <td class="p-4 border-b">5.000</td>
-                            <td class="p-4 border-b">6.000</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 border-b">Teh</td>
-                            <td class="p-4 border-b">4.000</td>
-                            <td class="p-4 border-b">5.000</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 border-b">Teh Susu</td>
-                            <td class="p-4 border-b">5.000</td>
-                            <td class="p-4 border-b">6.000</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 border-b">Lemon Tea</td>
-                            <td class="p-4 border-b">5.000</td>
-                            <td class="p-4 border-b">6.000</td>
-                        </tr>
-                        <tr>
-                            <td class="p-4 border-b">Susu</td>
-                            <td class="p-4 border-b">3.000</td>
-                            <td class="p-4 border-b">-</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="mt-8">
-                    <a href="https://wa.me/6281545916913?text=Halo%20Kopi%20Tentang%20Kita,%20saya%20ingin%20memesan%20minuman%20..."
-                        class="block w-full px-6 py-3 bg-coffee text-white rounded-lg font-semibold shadow-md hover:bg-coffee-dark focus:outline-none focus:ring-2 focus:ring-coffee-dark focus:ring-opacity-75">
-                        Pesan Sekarang
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Alamat Section -->
-    <section id="alamat" class="py-16 bg-coffee">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold text-coffee-dark mb-4">Alamat</h2>
-            <p class="text-coffee-dark">Kampus ITSBM Selayar Jl. RA. Kartini No. 17 Benteng</p>
-            <div id="peta"></div>
-        </div>
-    </section>
-
-    <section id="kontak" class="h-screen py-16 bg-white flex items-center justify-center">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold text-coffee-dark mb-4">Kontak</h2>
-            <p class="text-coffee-dark mb-4">
-                Anda dapat menghubungi kami melalui sosial media atau aplikasi pesan berikut:
-            </p>
-            <p class="text-coffee-dark">
-                <a href="https://instagram.com/entr.epreneurship23" class="text-blue-500 mr-4">
-                    <i class="fab fa-instagram text-black text-4xl"></i>
-                </a>
-                <a href="https://wa.me/6281545916913/" class="text-blue-500">
-                    <i class="fab fa-whatsapp text-black text-4xl"></i>
-                </a>
-            </p>
-        </div>
-    </section>
-
 
     <!-- Footer -->
     <footer class="bg-coffee text-coffee-dark font-semibold py-4 fixed bottom-0 left-0 w-full">
@@ -188,79 +104,6 @@
             <p>&copy; 2024 Kopi Tentang Kita. All Rights Reserved.</p>
         </div>
     </footer>
-
-
-    <!-- Script untuk menginisialisasi peta dengan Leaflet -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var map = L.map('peta').setView([-6.117045, 120.4608217], 18);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
-            const umkmData = {
-                name: "Kopi Tentang Kita",
-                rating: "5.0",
-                reviews: 1,
-                category: "Kedai Kopi",
-                buka: "Buka · Tutup pukul 22.04 🔻",
-                alamat: "Kampus ITSBM Selayar Jl. RA. Kartini No. 17 Benteng",
-                phone: "+62 815-4591-6913",
-                coords: [-6.117045, 120.4608217],
-            };
-
-            const marker = L.marker(umkmData.coords).addTo(map);
-
-            // Menambahkan tooltip permanen pada marker
-            marker.bindTooltip(umkmData.name, {
-                permanent: true,
-                direction: "top",
-                className: "marker-tooltip",
-            });
-
-            marker.bindPopup(`
-                <div class="popup-container">
-                    <div class="popup-header">${umkmData.name}</div>
-                    <div class="popup-rating">⭐ ${umkmData.rating} <span>(${umkmData.reviews})</span></div>
-                    <div class="popup-category">${umkmData.category}</div>
-                    <a href=""
-                    <div class="popup-address"><i class="fas fa-map-marker-alt"></i> ${umkmData.alamat}</div>
-                    <div class="popup-contact"><i class="fas fa-phone-alt"></i> ${umkmData.phone}</div>
-                </div>
-            `);
-
-            fetch("./jalanBentengAnjay.geojson")
-                .then((response) => response.json())
-                .then((geojsonData) => {
-                    L.geoJSON(geojsonData, {
-                        style: {
-                            color: "#000",
-                            weight: 3,
-                            opacity: 1,
-                        },
-                    }).addTo(map);
-                })
-                .catch((error) =>
-                    console.error("Error loading jalan GeoJSON:", error)
-                );
-
-            fetch("./kecamatanBenteng.geojson")
-                .then((response) => response.json())
-                .then((geojsonData) => {
-                    L.geoJSON(geojsonData, {
-                        style: {
-                            color: "#000",
-                            weight: 1.5,
-                            opacity: 0.8,
-                            fillColor: "#000",
-                            fillOpacity: 0.5,
-                        },
-                    }).addTo(map);
-                })
-                .catch((error) =>
-                    console.error("Error loading kecamatanBenteng GeoJSON:", error)
-                );
-        });
-    </script>
 
 </body>
 
